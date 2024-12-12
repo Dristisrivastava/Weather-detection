@@ -1,0 +1,58 @@
+*{
+    background-color: rgb(113, 16, 16);
+}
+.container{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(113, 16, 16);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    margin-block-start: 0;
+    margin-block-end:0;
+}
+.box{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.temp{
+    font-size: 4.5rem;
+}
+.temploc{
+    font-size: 2rem;
+}
+.condition{
+    font-size: 1.3rem;
+    margin-block-start: 0.5rem;
+    margin-left: 0.2rem;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:8vh;
+}
+.searcharea{
+    padding: 0.5rem 0;
+    outline: none;
+    color: white;
+    border: none;
+    background-color:  rgb(91, 12, 12);
+    font-size: 1.1rem;
+    border-bottom: 2px solid  rgb(156, 105, 105);
+}
+button{
+    background-color: rgb(156, 105, 105);
+    margin-top: 1rem;
+    margin-left: 0.4rem;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 6%;
+    box-shadow: 1px 1px 1px 4px rgb(69, 2, 1);
+}
