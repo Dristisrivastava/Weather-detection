@@ -1,51 +1,62 @@
-*{
+* {
     background-color: rgb(113, 16, 16);
 }
-.container{
+
+.container {
     width: 100%;
-    height: 90vh;
+    height: 85vh;
     background-color: rgb(113, 16, 16);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-p{
-    margin-block-start: 0;
-    margin-block-end:0;
-}
-.box{
-    display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
 }
 
-.temp{
+p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+}
+
+.temp {
     font-size: 4.5rem;
 }
-.temploc{
+
+.temploc {
     font-size: 2rem;
 }
-.condition{
+
+.condition {
     font-size: 1.3rem;
     margin-block-start: 0.5rem;
     margin-left: 0.2rem;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: center;
     width: 100%;
-    height:8vh;
+    height: 8vh;
 }
-.searcharea{
+
+.searcharea {
     padding: 0.5rem 0;
     outline: none;
     color: white;
     border: none;
-    background-color:  rgb(91, 12, 12);
+    background-color: rgb(91, 12, 12);
     font-size: 1.1rem;
-    border-bottom: 2px solid  rgb(156, 105, 105);
+    border-bottom: 2px solid rgb(156, 105, 105);
+    width: 80%; 
 }
-button{
+
+button {
     background-color: rgb(156, 105, 105);
     margin-top: 1rem;
     margin-left: 0.4rem;
@@ -55,4 +66,43 @@ button{
     cursor: pointer;
     border-radius: 6%;
     box-shadow: 1px 1px 1px 4px rgb(69, 2, 1);
+}
+
+
+@media (max-width: 768px) {
+    .temp {
+        font-size: 3rem;
+    }
+
+    .temploc {
+        font-size: 1.5rem; 
+    }
+
+    .condition {
+        font-size: 1rem;
+        margin-left: 0; 
+    }
+
+    .box {
+        flex-direction: column; 
+        align-items: center;
+        gap: 1rem; 
+    }
+
+    .searcharea {
+        font-size: 1rem;
+        width: 50%; 
+    }
+
+    button {
+        font-size: 1rem;
+        width: auto;
+        margin: 1rem auto;
+    }
+
+    nav {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
 }
