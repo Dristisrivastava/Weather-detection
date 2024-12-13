@@ -14,7 +14,7 @@ form.addEventListener("submit", seachLoc);
 
 let target = "Mumbai";
 const fetchResult = async (targetloc) => {
-  let url = `https://api.weatherapi.com/v1/current.json?key=f3d74f57cb1c4636aa370607241212&q=${targetloc}&aqi=no`;
+   let url = `https://api.weatherapi.com/v1/current.json?key=f3d74f57cb1c4636aa370607241212&q=${targetloc}&aqi=no`;
   const res = await fetch(url);
   const data = await res.json();
   console.log(data);
