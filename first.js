@@ -49,6 +49,8 @@ function setimage(cond) {
             return images[4];
         case 'partly cloudy':
             return images[2];
+       case 'patchy rain nearby':
+            return images[5];
         default:
             return images[0]; 
     }
